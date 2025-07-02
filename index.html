@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts Collection</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #0a0f7e;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #011b9b;
+            padding: 0.5rem 1rem;
+        }
+        .navbar-left {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        .navbar-right {
+            display: grid;
+            grid-auto-flow: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        .navbar-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .navbar-link:hover {
+            color: #ffd700;
+        }
+        footer {
+            background: #011b9b;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        header {
+            background: #022fe4;
+            color: #ffffff;
+            border-radius: 20px;
+            max-width: 300px;
+            margin-top: 5%;
+            padding: 1rem 1rem;
+            text-align: center;
+            display: left;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            color: #d0d0d0;    
+                 }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .layouts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+        .layout-card {
+            background: #576bce;
+            color:#ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem;
+            transition: box-shadow 0.2s;
+        }
+        .layout-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .layout-img {
+            width: 100%;
+            max-width: 200px;
+            height: 120px;
+            background: #ffffff;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #888;
+        }
+        .layout-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .layout-desc {
+            font-size: 0.95rem;
+            color: #555;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+            .navbar-right {
+                gap: 1rem;
+            }
+            header {
+                font-size: 1.2rem;
+                padding: 1rem 0.5rem;
+            }
+            .container {
+                padding: 0 0.5rem;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">Browse</div>
+        <div class="navbar-right">
+            <a href="#" class="navbar-link">Tags</a>
+            <a href="#" class="navbar-link">About</a>
+            <a href="#" class="navbar-link">Options</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Layouts Collection</h1>
+    </header>
+    <div class=" main-container">
+        <div class=""intro">
+             <div class="container">
+        
+            <p>
+               Layouts, or floor plans for architects, reveal the relationships between multiple objects, logics, and ideas within a space. 
+               Influencing the function, efficiency, and use of a space, layouts are transformative strategies 
+               that attempt to organize the many complex factors required in arriving at a design.
+               The following collections of standard layouts have been assembled for you as references that describe
+               the sizes, proportions, measurements, and relationships present in everyday spaces. We will continue to grow and update these guides to further 
+               illustrate the diversity of approaches used in organizing and designing floor plans and layouts for various programmatic functions of space.
+            </p>
+            <img src="C:\Users\Ashiya Parveen\OneDrive\Pictures\Screenshots 1\Screenshot 2025-07-02 211637.png" alt="Sample Layout Image">
+        </div>
+        <div class="layouts-grid">
+            <div class="layout-card">
+                <div class="layout-img">Living Room</div>
+                <div class="layout-title">Living Room Layouts</div>
+                <div class="layout-desc">Standard arrangements for living spaces, including seating, tables, and entertainment centers.</div>
+            </div>
+            <div class="layout-card">
+                <div class="layout-img">Kitchen</div>
+                <div class="layout-title">Kitchen Layouts</div>
+                <div class="layout-desc">Efficient kitchen floor plans such as L-shaped, U-shaped, and galley kitchens.</div>
+            </div>
+            <div class="layout-card">
+                <div class="layout-img">Bedroom</div>
+                <div class="layout-title">Bedroom Layouts</div>
+                <div class="layout-desc">Optimal bedroom arrangements for beds, wardrobes, and desks.</div>
+            </div>
+            <div class="layout-card">
+                <div class="layout-img">Office</div>
+                <div class="layout-title">Office Layouts</div>
+                <div class="layout-desc">Workspace layouts for productivity, including open-plan and private offices.</div>
+            </div>
+            <div class="layout-card">
+                <div class="layout-img">Bathroom</div>
+                <div class="layout-title">Bathroom Layouts</div>
+                <div class="layout-desc">Functional bathroom plans with fixtures and storage solutions.</div>
+            </div>
+            <div class="layout-card">
+                <div class="layout-img">Dining</div>
+                <div class="layout-title">Dining Room Layouts</div>
+                <div class="layout-desc">Dining area arrangements for various table sizes and seating options.</div>
+            </div>
+             <div class="layout-card">
+                <div class="layout-img">Bathroom</div>
+                <div class="layout-title">Bathroom Layouts</div>
+                <div class="layout-desc">Functional bathroom plans with fixtures and storage solutions.</div>
+            </div>
+            <div class="layout-card">
+                <div class="layout-img">Dining</div>
+                <div class="layout-title">Dining Room Layouts</div>
+                <div class="layout-desc">Dining area arrangements for various table sizes and seating options.</div>
+            </div>
+             <div class="layout-card">
+                <div class="layout-img">Bathroom</div>
+                <div class="layout-title">Bathroom Layouts</div>
+                <div class="layout-desc">Functional bathroom plans with fixtures and storage solutions.</div>
+            </div>
+            <div class="layout-card">
+                <div class="layout-img">Dining</div>
+                <div class="layout-title">Dining Room Layouts</div>
+                <div class="layout-desc">Dining area arrangements for various table sizes and seating options.</div>
+            </div>
+             <div class="layout-card">
+                <div class="layout-img">Bathroom</div>
+                <div class="layout-title">Bathroom Layouts</div>
+                <div class="layout-desc">Functional bathroom plans with fixtures and storage solutions.</div>
+            </div>
+             <div class="layout-card">
+                <div class="layout-img">Bathroom</div>
+                <div class="layout-title">Bathroom Layouts</div>
+                <div class="layout-desc">Functional bathroom plans with fixtures and storage solutions.</div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Layouts Collection. All rights reserved.</p><br><br>
+        <p>
+Dimensions.com is a project by Fantastic Offense
+©2025 Dimensions.com | All rights reserved
+A comprehensive reference database of dimensioned drawings documenting the standard measurements and sizes of the everyday objects and spaces that make up our world. Scaled 2D drawings and 3D models available for download. Updated daily.<br><br>
+| Categories: 
+Humans
+Animals
+Plants
+Objects
+Furniture
+Fixtures
+Layouts
+Buildings
+Transport
+Sports
+Digital
+Pop Culture<br> <br> | 
+Tools:Browse Tags Calculator Requests <br> <br> Info:  About Dimensions Pro Legal</p>
+    </div>
+</html>
